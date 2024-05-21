@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CUSTOMER PAYMENT METHOD</title>
+  <style>
+    body {
+      background-color: #ffe9e9;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    form input[type="radio"] {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005104;
+    }
+  </style>
+</head>
+<body>
+  <h1>BILL PAYMENT METHOD</h1>
+    <h2>Select Payment Method:</h2>
+    <form>
+      <label for="creditCard"><input type="radio" id="creditCard" name="paymentMethod" value="creditCard"> <b>Credit Card</b></label><br/>
+      <label for="debitCard"><input type="radio" id="debitCard" name="paymentMethod" value="debitCard"> <b>Debit Card</b></label><br/>
+      <label for="netBanking"><input type="radio" id="netBanking" name="paymentMethod" value="netBanking"> <b>Net Banking</b></label>
+    </form><br/>
+    <button onclick="submitPayment()">Submit Payment</button>
+  <script>
+    function submitPayment() {
+      alert('Payment method submitted!');
+    }
+  </script>
+</body>
+</html>

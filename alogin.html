@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ADMIN LOGIN</title>
+  <style>
+    body{
+        background-color: rgb(232, 255, 127);
+    }
+    form{
+    margin: 0 auto;
+    width: 300px;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  input[type="button"] {
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    border:rgb(from #ffffff);
+  }
+  </style>
+</head>
+<body align="center">
+  <img src="user.png" alt="user PNG" width="75" height="75">
+  <h1>Admin Login</h1><br/>
+  <form action="/login" method="post">
+    <input type="text" name="username" size="40" value="Username"><br/><br/>
+    <input type="password" name="password" size="40" value="Password"><br/><br/>
+    <input type="button" onClick="loggedin()" value="Login">
+  </form>
+  <br/>
+  <a href="/forgot-password">Forgot Password?</a>
+    <script>
+        function loggedin(){
+            alert("Logged in Successfully!!")
+        }
+    </script>
+</body>
+</html>

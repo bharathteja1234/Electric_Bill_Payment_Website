@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(190, 255, 144);
+            background-image: url(provider.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(21, 158, 0);
+            border: 0.5px solid rgba(0, 0, 0, 0.529);
+            margin: 20px;
+        }
+.container a {
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+.container a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.box-outline {
+            border: 2px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .text {
+            color:#4a4747;
+            font-size: 30px;
+            transition: font-size 0.3s;
+            text-align: left;
+        }
+        .text:hover {
+            color:#000;
+            font-size: 29.95px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">WELCOME TO ADMIN LOGIN PAGE!!</h1>
+    <div class="container" align="center">
+        <a href="alogin.html">LOGIN</a>
+        <a href="acalculation.html">BILL CALCUALTION</a>
+        <a href="afinecalc.html">FINE CALCULATION</a>
+    </div>
+    <h1 align="center">Website Description:</h1>
+    <div class="box-outline">
+        <div class="text">
+            The website is designed to streamline the electricity bill payment process. 
+            Administrators can securely <a href="alogin.html">login</a>, update the <a href="acalculation.html">bill calculation</a> calculation formula, manage billing cycles, and <a href="afinecalc.html">calculate fines</a> for late payments. 
+            Customers can register and log in to view their bills, calculate the amount due based on their electricity consumption, and make payments using their preferred payment method. 
+            The system enforces the specified billing rates based on the type of electricity connection (domestic or commercial) and provides a simple, efficient platform for hassle-free bill payments.
+            <br/><br/>
+            This outline provides a high-level view of the website's structure and functionalities. Depending on the technology stack you choose, you can implement each feature with appropriate programming languages, frameworks, and database systems.
+        </div>
+    </div>
+    Go back to <a href="electricity_bill.html"><strong>Home</strong></a>
+</body>
+</html>

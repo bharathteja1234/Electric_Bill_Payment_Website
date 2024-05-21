@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CUSTOMER REGISTRATION</title>
+  <style>
+    body{
+        background-color:rgb(254, 220, 176);
+    }
+    form{
+    margin: 0 auto;
+    width: 300px;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  input[type="button"] {
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #432c07;
+    color: #fff;
+    border:rgb(from #ffffff);
+  }
+  </style>
+</head>
+<body align="center">
+  <img src="user.png" alt="user PNG" width="75" height="75">
+    <h1>Customer Registration</h1><br/>
+    <form action="/register" method="post">
+      <input type="text" name="username" value="Username"><br/><br/>
+      <input type="email" name="email" value="Email"><br/><br/>
+      <input type="password" name="password" value="Password"><br/><br/>
+      <input type="button" onClick="registered()" value="Register">
+  </form>
+  <script>
+    function registered(){
+        alert("Registered Successfully!!\nLogin to continue.")
+        window.open("culogin.html")
+    }
+  </script>
+</body>
+</html>
